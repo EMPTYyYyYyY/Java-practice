@@ -29,7 +29,7 @@ public class pr_1 {
             System.out.print(1./j + " ");
         }
         System.out.println(" ");
-        int[] mass3 = new int[10];
+        int[] mass3 = new int[10]; // создание массива и выделение памяти под него
         for (int m = 0; m < 10; m++){
             mass3[m] = ((int) (Math.random() * 100)); // генерит случайные числа в диапозоне от 0 (включительно) до 100 (невключительно) (ПУНКТ 6)
             System.out.print(mass3[m] + " ");
