@@ -2,13 +2,37 @@ public class pr_1 {
     public static void main(String[] args) {
         int[] mass = { 1, 4, 5, 7, 98, 4, 1, 3, 6, 10 }; // объявление массива, заполнение ручками
         for (int i = 0; i < mass.length; i++){
-            System.out.print(mass[i] + " "); // вывод массива
+            System.out.print(mass[i] + " "); // вывод массива (ПУНКТ 4)
         }
         System.out.println(""); // для красоты
-        int sum = 0; // переменная куда будет складываться сумма эл. массива
-        for (int i = 0; i < mass.length; i++){
-            sum += mass[i];
+        int sum1 = 0; // переменная куда будет складываться сумма эл. массива
+        for (int i = 0; i < mass.length; i++){ // через for (ПУНКТ 3)
+            sum1 += mass[i];
         }
-        System.out.print(sum); // сумма эл. массива
+        System.out.println(sum1); // сумма эл. массива
+        int i = 0;
+        int sum2 = 0;
+        while (i < mass.length){ // через while (ПУНКТ 3)
+            sum2 += mass[i];
+            i++;
+        }
+        System.out.println(sum2);
+        int[] mass2 = { 1, 4, 5, 7, 98, 4, 1, 3, 6, 10 }; // второй массив объявленный ручками
+        int n = 0;
+        int sum3 = 0;
+        do { // через do while (ПУНКТ 3)
+            sum3 += mass2[n];
+            n++;
+        }while (n < mass2.length);
+        System.out.println(sum3);
+        for (int j = 1; j < 11; j++){ // первые 10 чисел гармонического ряда (ПУНКТ 5)
+            System.out.print(1./j + " ");
+        }
+        System.out.println(" ");
+        int[] mass3 = new int[10];
+        for (int m = 0; m < 10; m++){
+            mass3[m] = ((int) (Math.random() * 100)); // генерит случайные числа в диапозоне от 0 (включительно) до 100 (невключительно) (ПУНКТ 6)
+            System.out.print(mass3[m] + " ");
+        }
     }
 }
