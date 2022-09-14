@@ -38,10 +38,14 @@ public class pr_1 {
             System.out.print(mass3[m] + " ");
         }
         System.out.println(" ");
+        System.out.print("Отсортированный:");
+        System.out.println(" ");
         Arrays.sort(mass3);
         for (int m = 0; m < 10;m++){ // сортировка и вывод отсортированного массива (ПУНКТ 6)
             System.out.print(mass3[m] + " ");
         }
+        System.out.println(" ");
+        System.out.print("---------------------------");
         System.out.println(" ");
         int[] mass4 = new int[10];
         Random rnd = new Random();
@@ -49,6 +53,8 @@ public class pr_1 {
             mass4[k] = rnd.nextInt(100); // рандомом (ПУНКТ 6)
             System.out.print(mass4[k] + " ");
         }
+        System.out.println(" ");
+        System.out.print("Отсортированный:");
         System.out.println(" ");
         Arrays.sort(mass4); // сортировка (ПУНКТ 6)
         for (int m = 0; m < 10;m++){
