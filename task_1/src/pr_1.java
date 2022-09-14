@@ -2,6 +2,13 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class pr_1 {
+    public static int getFactorial(int f) {
+        int result = 1;
+        for (int i = 1; i <= f; i++) {
+            result = result * i;
+        }
+        return result;
+    }
     public static void main(String[] args) {
         int[] mass = {1, 4, 5, 7, 98, 4, 1, 3, 6, 10}; // объявление массива, заполнение ручками
         for (int i = 0; i < mass.length; i++) {
@@ -60,5 +67,9 @@ public class pr_1 {
         for (int m = 0; m < 10;m++){
             System.out.print(mass4[m] + " ");
         }
+        System.out.println("");
+        System.out.print("Факториал для числа 4:");
+        System.out.println("");
+        System.out.print(getFactorial(4));
     }
 }
